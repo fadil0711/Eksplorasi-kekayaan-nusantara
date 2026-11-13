@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Latar: Rumah Gadang dengan anak berpakaian adat Minang berdiri di sebelahnya -->
+  <style>
+    .awan  { animation: awan 14s ease-in-out infinite alternate; }
+    .tangan { transform-box: fill-box; transform-origin: 50% 8%; animation: lambai 1.4s ease-in-out infinite; }
+    .daun  { transform-box: fill-box; transform-origin: 50% 100%; animation: angin 3s ease-in-out infinite; }
+    @keyframes awan   { to { transform: translateX(60px); } }
+    @keyframes lambai { 0%, 100% { transform: rotate(-150deg); } 50% { transform: rotate(-115deg); } }
+    @keyframes angin  { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <defs>
+    <linearGradient id="langit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bae6fd"/>
+      <stop offset="1" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Langit -->
+  <rect width="1200" height="800" fill="url(#langit)"/>
+
+  <g stroke="#1e293b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Matahari -->
+    <circle cx="1060" cy="130" r="60" fill="#facc15"/>
+
+    <!-- Awan -->
+    <g class="awan" fill="#ffffff">
+      <ellipse cx="200" cy="120" rx="80" ry="28"/>
+      <ellipse cx="700" cy="90" rx="65" ry="24"/>
+      <ellipse cx="930" cy="250" rx="55" ry="20"/>
+    </g>
+
+    <!-- Gunung & bukit -->
+    <path d="M520,690 L760,380 L1000,690 Z" fill="#a7f3d0"/>
+    <path d="M820,690 L1010,430 L1200,690 Z" fill="#6ee7b7"/>
+    <path d="M0,690 Q300,620 600,670 T1200,650 L1200,800 L0,800 Z" fill="#86efac"/>
+
+    <!-- Rumah Gadang -->
+    <g transform="translate(130 440) scale(2.4)" stroke-width="1.8">
+      <line x1="20" y1="85" x2="20" y2="98"/>
+      <line x1="50" y1="85" x2="50" y2="98"/>
+      <line x1="80" y1="85" x2="80" y2="98"/>
+      <rect x="12" y="55" width="76" height="32" rx="3" fill="#f59e0b"/>
+      <path d="M12,66 L88,66 M12,78 L88,78" stroke="#b45309" stroke-width="1.2"/>
+      <rect x="43" y="64" width="14" height="23" fill="#92400e"/>
+      <rect x="19" y="62" width="16" height="12" fill="#fde68a"/>
+      <rect x="65" y="62" width="16" height="12" fill="#fde68a"/>
+      <path d="M0,60 Q12,52 14,30 Q22,48 36,48 Q46,44 50,22 Q54,44 64,48 Q78,48 86,30 Q88,52 100,60 Z" fill="#b91c1c"/>
+      <!-- tangga -->
+      <path d="M44,87 L42,98 M56,87 L58,98 M43,92 L57,92" stroke-width="1.4"/>
+    </g>
+
+    <!-- Anak berpakaian adat berdiri di sebelah rumah -->
+    <g transform="translate(40 500)">
+      <!-- kaki -->
+      <rect x="18" y="148" width="10" height="28" rx="4" fill="#f4c095"/>
+      <rect x="36" y="148" width="10" height="28" rx="4" fill="#f4c095"/>
+      <!-- tangan kiri (diam) -->
+      <rect x="0" y="54" width="11" height="48" rx="5" fill="#b91c1c"/>
+      <circle cx="5.5" cy="106" r="6" fill="#f4c095"/>
+      <!-- baju -->
+      <path d="M10,50 L54,50 L58,112 L6,112 Z" fill="#b91c1c"/>
+      <path d="M32,50 L32,112" stroke="#facc15" stroke-width="3"/>
+      <!-- kain songket -->
+      <path d="M6,108 L58,108 L56,152 L8,152 Z" fill="#facc15"/>
+      <path d="M8,122 L57,122 M8,136 L56,136" stroke="#b45309" stroke-width="3"/>
+      <!-- tangan kanan (melambai) -->
+      <g class="tangan">
+        <rect x="53" y="54" width="11" height="48" rx="5" fill="#b91c1c"/>
+        <circle cx="58.5" cy="106" r="6" fill="#f4c095"/>
+      </g>
+      <!-- kepala -->
+      <circle cx="32" cy="30" r="20" fill="#f4c095"/>
+      <circle cx="25" cy="30" r="2" fill="#1e293b" stroke="none"/>
+      <circle cx="39" cy="30" r="2" fill="#1e293b" stroke="none"/>
+      <path d="M25,38 Q32,44 39,38" fill="none" stroke-width="2.5"/>
+      <!-- destar (ikat kepala Minang) -->
+      <path d="M11,24 Q32,0 53,24 L50,16 Q32,4 14,16 Z" fill="#1e293b"/>
+      <path d="M12,22 Q32,6 52,22" fill="none" stroke="#facc15" stroke-width="3"/>
+    </g>
+
+    <!-- Pohon kelapa -->
+    <path d="M1090,690 Q1070,580 1100,470" fill="none" stroke-width="16"/>
+    <path d="M1090,690 Q1070,580 1100,470" fill="none" stroke="#a16207" stroke-width="9"/>
+    <g class="daun" fill="#22c55e">
+      <path d="M1100,470 Q1030,440 990,490 Q1040,460 1100,470 Z"/>
+      <path d="M1100,470 Q1170,440 1200,490 Q1160,460 1100,470 Z"/>
+      <path d="M1100,470 Q1060,410 1020,415 Q1070,430 1100,470 Z"/>
+      <path d="M1100,470 Q1140,410 1180,415 Q1130,430 1100,470 Z"/>
+    </g>
+  </g>
+</svg>

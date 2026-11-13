@@ -9,26 +9,94 @@
 <body>
 
     <div class="app-container">
-        <!-- Header Navigasi -->
-        <header class="navbar">
-            <div class="logo">🇮🇩 Nusantara<span>Kita</span></div>
-            <nav>
-                <a href="#menu-utama">Menu Utama</a>
-                <a href="#cara-bermain">Cara Bermain</a>
-                <a href="#materi-1">Mulai Belajar</a>
-            </nav>
-        </header>
-
         <!-- ==================== 1. MENU UTAMA ==================== -->
         <section id="menu-utama" class="screen default-screen">
-            <div class="hero-card">
+            <div class="hero-card hero-menu">
+                <!-- Umbul-umbul merah putih -->
+                <svg class="umbul" viewBox="0 0 600 40" aria-hidden="true">
+                    <line x1="0" y1="4" x2="600" y2="4" stroke="#1e293b" stroke-width="3"/>
+                    <g stroke="#1e293b" stroke-width="2.5" stroke-linejoin="round">
+                    <path class="bendera" d="M10,4 L40,4 L25,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M60,4 L90,4 L75,34 Z" fill="#ffffff"/>
+                    <path class="bendera" d="M110,4 L140,4 L125,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M160,4 L190,4 L175,34 Z" fill="#ffffff"/>
+                    <path class="bendera" d="M210,4 L240,4 L225,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M260,4 L290,4 L275,34 Z" fill="#ffffff"/>
+                    <path class="bendera" d="M310,4 L340,4 L325,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M360,4 L390,4 L375,34 Z" fill="#ffffff"/>
+                    <path class="bendera" d="M410,4 L440,4 L425,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M460,4 L490,4 L475,34 Z" fill="#ffffff"/>
+                    <path class="bendera" d="M510,4 L540,4 L525,34 Z" fill="#ef4444"/>
+                    <path class="bendera" d="M560,4 L590,4 L575,34 Z" fill="#ffffff"/>
+                    </g>
+                </svg>
                 <span class="badge">Edukasi Budaya Indonesia</span>
                 <h1>Eksplorasi Kekayaan Budaya Nusantara</h1>
                 <p>Pelajari keunikan rumah adat, tarian tradisional, alat musik, hingga senjata khas dari Sabang sampai Merauke, lalu uji pemahamanmu melalui 10 tahap kuis interaktif!</p>
                 <div class="btn-group">
-                    <a href="#materi-1" class="btn btn-primary">Mulai Sekarang</a>
-                    <a href="#cara-bermain" class="btn btn-secondary">Cara Bermain</a>
+                    <a href="#cara-bermain" class="btn btn-primary btn-mulai">▶ Mulai</a>
                 </div>
+
+                <!-- Gambar pemandangan budaya: Rumah Gadang, Gunungan Wayang, pohon kelapa -->
+                <svg class="hero-scene" viewBox="0 0 600 220" role="img" aria-label="Gambar Rumah Gadang, gunungan wayang, layang-layang, dan pohon kelapa">
+                    <!-- Matahari dengan sinar berputar -->
+                    <g class="sinar" stroke="#f59e0b" stroke-width="4" stroke-linecap="round">
+                        <line x1="562" y1="45" x2="572" y2="45"/>
+                        <line x1="552.6" y1="67.6" x2="559.7" y2="74.7"/>
+                        <line x1="530" y1="77" x2="530" y2="87"/>
+                        <line x1="507.4" y1="67.6" x2="500.3" y2="74.7"/>
+                        <line x1="498" y1="45" x2="488" y2="45"/>
+                        <line x1="507.4" y1="22.4" x2="500.3" y2="15.3"/>
+                        <line x1="530" y1="13" x2="530" y2="3"/>
+                        <line x1="552.6" y1="22.4" x2="559.7" y2="15.3"/>
+                    </g>
+                    <circle cx="530" cy="45" r="26" fill="#facc15" stroke="#1e293b" stroke-width="3"/>
+
+                    <!-- Layang-layang merah putih -->
+                    <g class="layangan" stroke="#1e293b" stroke-width="2.5" stroke-linejoin="round">
+                        <path d="M25,40 L42,14 L59,40 Z" fill="#ef4444"/>
+                        <path d="M25,40 L59,40 L42,70 Z" fill="#ffffff"/>
+                        <path d="M42,70 Q32,82 44,92 Q56,102 46,114" fill="none" stroke-linecap="round"/>
+                    </g>
+
+                    <g class="awan" fill="#ffffff" stroke="#1e293b" stroke-width="3">
+                        <ellipse cx="120" cy="35" rx="36" ry="13"/>
+                        <ellipse cx="300" cy="28" rx="28" ry="11"/>
+                    </g>
+                    <path d="M0,200 Q150,150 300,185 T600,170 L600,220 L0,220 Z" fill="#86efac" stroke="#1e293b" stroke-width="3"/>
+
+                    <!-- Rumah Gadang -->
+                    <g stroke="#1e293b" stroke-width="3">
+                        <line x1="105" y1="185" x2="105" y2="205"/>
+                        <line x1="165" y1="185" x2="165" y2="205"/>
+                        <line x1="225" y1="185" x2="225" y2="205"/>
+                        <rect x="92" y="128" width="146" height="60" rx="4" fill="#f59e0b"/>
+                        <rect x="150" y="145" width="30" height="43" fill="#92400e"/>
+                        <rect x="108" y="145" width="26" height="20" fill="#fde68a"/>
+                        <rect x="196" y="145" width="26" height="20" fill="#fde68a"/>
+                        <path d="M70,135 Q92,118 95,75 Q110,108 140,108 Q160,100 165,62 Q170,100 190,108 Q220,108 235,75 Q238,118 260,135 Z" fill="#b91c1c" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- Gunungan Wayang -->
+                    <g class="gunungan" stroke="#1e293b" stroke-width="3" stroke-linejoin="round">
+                        <path d="M375,60 Q425,120 415,200 L335,200 Q325,120 375,60 Z" fill="#3b82f6"/>
+                        <path d="M375,90 Q403,130 398,175 L352,175 Q347,130 375,90 Z" fill="#facc15"/>
+                        <rect x="363" y="160" width="24" height="40" fill="#b91c1c"/>
+                        <circle cx="375" cy="128" r="9" fill="#ffffff"/>
+                    </g>
+
+                    <!-- Pohon kelapa -->
+                    <g stroke="#1e293b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M515,190 Q505,140 520,100" fill="none" stroke-width="9"/>
+                        <path d="M515,190 Q505,140 520,100" fill="none" stroke="#a16207" stroke-width="4"/>
+                        <g class="daun">
+                        <path d="M520,100 Q485,85 465,110 Q490,95 520,100 Z" fill="#22c55e"/>
+                        <path d="M520,100 Q555,85 575,110 Q550,95 520,100 Z" fill="#22c55e"/>
+                        <path d="M520,100 Q500,70 480,72 Q505,80 520,100 Z" fill="#22c55e"/>
+                        <path d="M520,100 Q540,70 560,72 Q535,80 520,100 Z" fill="#22c55e"/>
+                        </g>
+                    </g>
+                </svg>
             </div>
         </section>
 
@@ -44,7 +112,7 @@
                 </ol>
                 <div class="nav-footer">
                     <a href="#menu-utama" class="btn btn-outline">Kembali</a>
-                    <a href="#materi-1" class="btn btn-primary">Mulai Materi 1 &rarr;</a>
+                    <a href="#materi-1" class="btn btn-primary">Next &rarr;</a>
                 </div>
             </div>
         </section>
