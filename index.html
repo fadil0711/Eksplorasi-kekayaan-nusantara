@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Budaya Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header Navigasi -->
+        <header class="navbar">
+            <div class="logo">🇮🇩 Nusantara<span>Kita</span></div>
+            <nav>
+                <a href="#menu-utama">Menu Utama</a>
+                <a href="#cara-bermain">Cara Bermain</a>
+                <a href="#materi-1">Mulai Belajar</a>
+            </nav>
+        </header>
+
+        <!-- ==================== 1. MENU UTAMA ==================== -->
+        <section id="menu-utama" class="screen default-screen">
+            <div class="hero-card">
+                <span class="badge">Edukasi Budaya Indonesia</span>
+                <h1>Eksplorasi Kekayaan Budaya Nusantara</h1>
+                <p>Pelajari keunikan rumah adat, tarian tradisional, alat musik, hingga senjata khas dari Sabang sampai Merauke, lalu uji pemahamanmu melalui 10 tahap kuis interaktif!</p>
+                <div class="btn-group">
+                    <a href="#materi-1" class="btn btn-primary">Mulai Sekarang</a>
+                    <a href="#cara-bermain" class="btn btn-secondary">Cara Bermain</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 2. CARA BERMAIN ==================== -->
+        <section id="cara-bermain" class="screen">
+            <div class="card">
+                <h2>📖 Cara Bermain & Belajar</h2>
+                <ol class="rules-list">
+                    <li><strong>Baca Materi:</strong> Setiap tahap dimulai dengan kartu materi singkat mengenai salah satu budaya daerah di Indonesia.</li>
+                    <li><strong>Jawab Kuis:</strong> Setelah membaca materi, klik tombol <em>Lanjut ke Kuis</em> untuk menjawab pertanyaan terkait materi tersebut.</li>
+                    <li><strong>Cek Jawaban:</strong> Klik salah satu pilihan jawaban (A, B, atau C). Sistem akan langsung menampilkan status benar/salah beserta penjelasannya.</li>
+                    <li><strong>Selesaikan 10 Tahap:</strong> Ikuti alur <em>Materi &rarr; Kuis</em> secara berurutan hingga tahap ke-10 selesai.</li>
+                </ol>
+                <div class="nav-footer">
+                    <a href="#menu-utama" class="btn btn-outline">Kembali</a>
+                    <a href="#materi-1" class="btn btn-primary">Mulai Materi 1 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 1 ==================== -->
+        <section id="materi-1" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 1 / 10 • Sumatra Barat</span>
+                <h2>Rumah Gadang</h2>
+                <div class="materi-box">
+                    <p><strong>Rumah Gadang</strong> adalah rumah adat tradisional masyarakat Minangkabau di Sumatra Barat. Ciri khas paling menonjol dari bangunan ini adalah bentuk atapnya yang melengkung tajam ke atas menyerupai tanduk kerbau, yang disebut <em>Gonjong</em>.</p>
+                    <p>Bentuk atap ini melambangkan kemenangan masyarakat Minangkabau dalam kisah adu kerbau pada masa lampau.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#menu-utama" class="btn btn-outline">Menu Utama</a>
+                    <a href="#quiz-1" class="btn btn-primary">Lanjut ke Kuis 1 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-1" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 1 / 10</span>
+                <h3>Apa sebutan untuk bentuk atap melengkung menyerupai tanduk kerbau pada Rumah Gadang?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q1" id="q1-a" class="opt-wrong">
+                    <label for="q1-a">A. Joglo</label>
+
+                    <input type="radio" name="q1" id="q1-b" class="opt-correct">
+                    <label for="q1-b">B. Gonjong</label>
+
+                    <input type="radio" name="q1" id="q1-c" class="opt-wrong">
+                    <label for="q1-c">C. Tongkonan</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Gonjong adalah atap khas Rumah Gadang yang menyerupai tanduk kerbau.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>B. Gonjong</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-1" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-2" class="btn btn-primary">Materi 2 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 2 ==================== -->
+        <section id="materi-2" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 2 / 10 • Jawa Barat</span>
+                <h2>Alat Musik Angklung</h2>
+                <div class="materi-box">
+                    <p><strong>Angklung</strong> adalah alat musik multitonal (bernada ganda) yang terbuat dari bambu dan berasal dari tanah Sunda, Jawa Barat. Alat musik ini dibunyikan dengan cara digoyangkan sehingga menghasilkan bunyi dari getaran susunan tabung bambu.</p>
+                    <p>Pada November 2010, UNESCO menetapkan Angklung sebagai <em>Warisan Budaya Takbenda Manusia</em>.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-1" class="btn btn-outline">&larr; Kuis 1</a>
+                    <a href="#quiz-2" class="btn btn-primary">Lanjut ke Kuis 2 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-2" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 2 / 10</span>
+                <h3>Bagaimana cara memainkan alat musik tradisional Angklung?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q2" id="q2-a" class="opt-wrong">
+                    <label for="q2-a">A. Dipetik menggunakan jari</label>
+
+                    <input type="radio" name="q2" id="q2-b" class="opt-wrong">
+                    <label for="q2-b">B. Ditiup pada bagian ujung bambu</label>
+
+                    <input type="radio" name="q2" id="q2-c" class="opt-correct">
+                    <label for="q2-c">C. Digoyangkan dengan tangan</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Angklung menghasilkan nada dari getaran tabung bambu saat digoyangkan.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>C. Digoyangkan dengan tangan</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-2" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-3" class="btn btn-primary">Materi 3 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 3 ==================== -->
+        <section id="materi-3" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 3 / 10 • Bali</span>
+                <h2>Tari Kecak</h2>
+                <div class="materi-box">
+                    <p><strong>Tari Kecak</strong> merupakan seni tari drama khas Bali yang diciptakan pada tahun 1930-an oleh seniman Wayan Limbak bersama pelukis Walter Spies.</p>
+                    <p>Pertunjukan ini tidak menggunakan iringan alat musik, melainkan paduan suara puluhan penari pria yang duduk melingkar sambil menyerukan kata <em>"cak-cak-cak"</em> secara berirama, mengisahkan cerita epik Ramayana.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-2" class="btn btn-outline">&larr; Kuis 2</a>
+                    <a href="#quiz-3" class="btn btn-primary">Lanjut ke Kuis 3 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-3" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 3 / 10</span>
+                <h3>Kisah epik apa yang diangkat dalam pertunjukan Tari Kecak dari Bali?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q3" id="q3-a" class="opt-correct">
+                    <label for="q3-a">A. Ramayana</label>
+
+                    <input type="radio" name="q3" id="q3-b" class="opt-wrong">
+                    <label for="q3-b">B. Malin Kundang</label>
+
+                    <input type="radio" name="q3" id="q3-c" class="opt-wrong">
+                    <label for="q3-c">C. Sangkuriang</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Tari Kecak mengisahkan cerita Ramayana saat pasukan kera membantu Rama melawan Rahwana.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>A. Ramayana</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-3" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-4" class="btn btn-primary">Materi 4 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 4 ==================== -->
+        <section id="materi-4" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 4 / 10 • Aceh</span>
+                <h2>Tari Saman</h2>
+                <div class="materi-box">
+                    <p><strong>Tari Saman</strong> adalah tarian Suku Gayo dari Aceh yang biasa ditampilkan untuk merayakan peristiwa penting dalam adat maupun hari besar keagamaan.</p>
+                    <p>Tarian ini terkenal dengan kekompakan serta kecepatan gerakan tangan, tepukan dada, dan jentikan jari para penari yang duduk berbanjar rapat tanpa iringan alat musik.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-3" class="btn btn-outline">&larr; Kuis 3</a>
+                    <a href="#quiz-4" class="btn btn-primary">Lanjut ke Kuis 4 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-4" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 4 / 10</span>
+                <h3>Dari suku manakah Tari Saman di Provinsi Aceh berasal?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q4" id="q4-a" class="opt-wrong">
+                    <label for="q4-a">A. Suku Batak</label>
+
+                    <input type="radio" name="q4" id="q4-b" class="opt-wrong">
+                    <label for="q4-b">B. Suku Melayu</label>
+
+                    <input type="radio" name="q4" id="q4-c" class="opt-correct">
+                    <label for="q4-c">C. Suku Gayo</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Tari Saman berasal dari dataran tinggi Suku Gayo, Aceh.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>C. Suku Gayo</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-4" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-5" class="btn btn-primary">Materi 5 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 5 ==================== -->
+        <section id="materi-5" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 5 / 10 • Jawa Tengah & Yogyakarta</span>
+                <h2>Batik Tulis</h2>
+                <div class="materi-box">
+                    <p><strong>Batik</strong> adalah kain bergambar yang pembuatannya dilakukan dengan menuliskan atau menerakan <em>malam</em> (lilin panas) pada kain mori menggunakan alat bernama <strong>Canting</strong>.</p>
+                    <p>Setiap motif batik memiliki filosofi mendalam, seperti motif <em>Parang</em> (pantang menyerah) dan <em>Kawung</em> (kesucian serta pengendalian diri).</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-4" class="btn btn-outline">&larr; Kuis 4</a>
+                    <a href="#quiz-5" class="btn btn-primary">Lanjut ke Kuis 5 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-5" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 5 / 10</span>
+                <h3>Apa nama alat tradisional yang digunakan untuk melukis lilin (malam) pada kain batik tulis?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q5" id="q5-a" class="opt-correct">
+                    <label for="q5-a">A. Canting</label>
+
+                    <input type="radio" name="q5" id="q5-b" class="opt-wrong">
+                    <label for="q5-b">B. Kuas Bambu</label>
+
+                    <input type="radio" name="q5" id="q5-c" class="opt-wrong">
+                    <label for="q5-c">C. Alat Tenun</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Canting digunakan untuk menorehkan malam cair di atas kain mori.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>A. Canting</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-5" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-6" class="btn btn-primary">Materi 6 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 6 ==================== -->
+        <section id="materi-6" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 6 / 10 • Sulawesi Selatan</span>
+                <h2>Rumah Adat Tongkonan</h2>
+                <div class="materi-box">
+                    <p><strong>Tongkonan</strong> adalah rumah adat masyarakat Suku Toraja di Sulawesi Selatan. Atapnya melengkung menyerupai perahu yang tertelungkup, dihiasi ukiran geometris berwarna merah, hitam, kuning, dan putih.</p>
+                    <p>Di bagian depan rumah biasanya terdapat deretan tanduk kerbau yang dipasang vertikal sebagai simbol status sosial dan kemakmuran keluarga.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-5" class="btn btn-outline">&larr; Kuis 5</a>
+                    <a href="#quiz-6" class="btn btn-primary">Lanjut ke Kuis 6 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-6" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 6 / 10</span>
+                <h3>Menyerupai bentuk apakah atap rumah adat Tongkonan dari Tana Toraja?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q6" id="q6-a" class="opt-wrong">
+                    <label for="q6-a">A. Payung terbuka</label>
+
+                    <input type="radio" name="q6" id="q6-b" class="opt-correct">
+                    <label for="q6-b">B. Perahu yang melengkung</label>
+
+                    <input type="radio" name="q6" id="q6-c" class="opt-wrong">
+                    <label for="q6-c">C. Kubah masjid</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Atap perahu melambangkan leluhur masyarakat Toraja yang datang menggunakan perahu.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>B. Perahu yang melengkung</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-6" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-7" class="btn btn-primary">Materi 7 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 7 ==================== -->
+        <section id="materi-7" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 7 / 10 • Papua & Maluku</span>
+                <h2>Alat Musik Tifa</h2>
+                <div class="materi-box">
+                    <p><strong>Tifa</strong> adalah alat musik pukul tradisional yang berasal dari Papua dan Maluku. Bentuknya menyerupai kendang dengan tabung kayu berongga yang bagian atasnya ditutup menggunakan kulit hewan (rusa atau biawak).</p>
+                    <p>Tifa biasa dimainkan untuk mengiringi tarian perang, upacara adat penyambutan tamu, maupun pesta rakyat.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-6" class="btn btn-outline">&larr; Kuis 6</a>
+                    <a href="#quiz-7" class="btn btn-primary">Lanjut ke Kuis 7 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-7" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 7 / 10</span>
+                <h3>Alat musik Tifa dari Papua dan Maluku dimainkan dengan cara...</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q7" id="q7-a" class="opt-wrong">
+                    <label for="q7-a">A. Digesek</label>
+
+                    <input type="radio" name="q7" id="q7-b" class="opt-wrong">
+                    <label for="q7-b">B. Ditiup</label>
+
+                    <input type="radio" name="q7" id="q7-c" class="opt-correct">
+                    <label for="q7-c">C. Dipukul</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Tifa merupakan instrumen perkusi yang dimainkan dengan cara dipukul telapak tangan.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>C. Dipukul</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-7" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-8" class="btn btn-primary">Materi 8 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 8 ==================== -->
+        <section id="materi-8" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 8 / 10 • Kalimantan</span>
+                <h2>Senjata Tradisional Mandau</h2>
+                <div class="materi-box">
+                    <p><strong>Mandau</strong> adalah senjata tajam sejenis parang yang menjadi pusaka budaya masyarakat Suku Dayak di Kalimantan. Bilah mandau terbuat dari batu gunung yang ditempa khusus dengan ukiran khas.</p>
+                    <p>Hulu (gagang) mandau umumnya diukir dari tanduk rusa menyerupai kepala burung enggang.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-7" class="btn btn-outline">&larr; Kuis 7</a>
+                    <a href="#quiz-8" class="btn btn-primary">Lanjut ke Kuis 8 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-8" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 8 / 10</span>
+                <h3>Mandau merupakan senjata tradisional kebanggaan suku mana?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q8" id="q8-a" class="opt-correct">
+                    <label for="q8-a">A. Suku Dayak</label>
+
+                    <input type="radio" name="q8" id="q8-b" class="opt-wrong">
+                    <label for="q8-b">B. Suku Bugis</label>
+
+                    <input type="radio" name="q8" id="q8-c" class="opt-wrong">
+                    <label for="q8-c">C. Suku Asmat</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Mandau adalah senjata pusaka Suku Dayak di Pulau Kalimantan.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>A. Suku Dayak</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-8" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-9" class="btn btn-primary">Materi 9 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 9 ==================== -->
+        <section id="materi-9" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 9 / 10 • Nusa Tenggara Timur</span>
+                <h2>Alat Musik Sasando</h2>
+                <div class="materi-box">
+                    <p><strong>Sasando</strong> adalah alat musik petik tradisional dari Pulau Rote, Nusa Tenggara Timur. Bagian utamanya berupa tabung bambu panjang yang dikelilingi dawai-dawai halus.</p>
+                    <p>Ciri khas Sasando terletak pada wadah resonansinya yang terbuat dari anyaman <strong>daun lontar</strong> berbentuk setengah lingkaran yang melengkung.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-8" class="btn btn-outline">&larr; Kuis 8</a>
+                    <a href="#quiz-9" class="btn btn-primary">Lanjut ke Kuis 9 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-9" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 9 / 10</span>
+                <h3>Terbuat dari bahan alami apakah wadah resonansi melengkung pada alat musik Sasando?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q9" id="q9-a" class="opt-wrong">
+                    <label for="q9-a">A. Kulit kayu jati</label>
+
+                    <input type="radio" name="q9" id="q9-b" class="opt-correct">
+                    <label for="q9-b">B. Anyaman daun lontar</label>
+
+                    <input type="radio" name="q9" id="q9-c" class="opt-wrong">
+                    <label for="q9-c">C. Tempurung kelapa</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Benar!</strong> Daun pohon lontar banyak tumbuh di Pulau Rote dan dianyam sebagai resonator suara Sasando.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>B. Anyaman daun lontar</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-9" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#materi-10" class="btn btn-primary">Materi 10 &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAHAP 10 ==================== -->
+        <section id="materi-10" class="screen">
+            <div class="card">
+                <span class="step-badge">Materi 10 / 10 • Jawa Timur</span>
+                <h2>Reog Ponorogo</h2>
+                <div class="materi-box">
+                    <p><strong>Reog Ponorogo</strong> adalah kesenian budaya tradisional dari Kabupaten Ponorogo, Jawa Timur. Ikon utama pertunjukan ini adalah topeng raksasa <em>Singa Barong</em> bermahkota bulu burung merak (Dadak Merak).</p>
+                    <p>Topeng Dadak Merak memiliki berat mencapai 50–60 kilogram dan diangkat oleh penari utama hanya dengan kekuatan gigitan gigi pada kayu penyangga di bagian dalam topeng.</p>
+                </div>
+                <div class="nav-footer">
+                    <a href="#quiz-9" class="btn btn-outline">&larr; Kuis 9</a>
+                    <a href="#quiz-10" class="btn btn-primary">Lanjut ke Kuis Terakhir &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-10" class="screen">
+            <div class="card">
+                <span class="step-badge">Kuis 10 / 10 (Terakhir)</span>
+                <h3>Bagaimana cara penari utama Reog Ponorogo menahan beban topeng Dadak Merak seberat puluhan kilogram?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q10" id="q10-a" class="opt-wrong">
+                    <label for="q10-a">A. Diikatkan ke bahu dengan tali</label>
+
+                    <input type="radio" name="q10" id="q10-b" class="opt-wrong">
+                    <label for="q10-b">B. Dipegang dengan kedua tangan</label>
+
+                    <input type="radio" name="q10" id="q10-c" class="opt-correct">
+                    <label for="q10-c">C. Digigit menggunakan kekuatan gigi</label>
+
+                    <div class="feedback correct-msg">✅ <strong>Luar Biasa!</strong> Penari menahan beban Dadak Merak menggunakan kekuatan gigitan rahang.</div>
+                    <div class="feedback wrong-msg">❌ <strong>Kurang Tepat!</strong> Jawaban yang benar adalah <strong>C. Digigit menggunakan kekuatan gigi</strong>.</div>
+                </div>
+                <div class="nav-footer">
+                    <a href="#materi-10" class="btn btn-outline">&larr; Ulangi Materi</a>
+                    <a href="#selesai" class="btn btn-primary">Selesai &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HALAMAN SELESAI ==================== -->
+        <section id="selesai" class="screen">
+            <div class="hero-card">
+                <span class="badge">Selamat! 🎉</span>
+                <h1>Kamu Telah Menyelesaikan 10 Tahap Budaya Nusantara</h1>
+                <p>Terima kasih telah ikut melestarikan dan mengenal keragaman budaya Indonesia dari Sabang sampai Merauke.</p>
+                <div class="btn-group">
+                    <a href="#menu-utama" class="btn btn-primary">Kembali ke Menu Utama</a>
+                    <a href="#materi-1" class="btn btn-secondary">Ulangi dari Awal</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
